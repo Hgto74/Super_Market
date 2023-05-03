@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+
+    <meta name="description" content="MARKET-S18" />
+    <!-- link Iconos -->
+    <script
+      src="https://kit.fontawesome.com/a7f78d4b75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link Fuentes Google ------------------------------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Fuentes Google ------------------------------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/Minilogo.png" />
+    <!-- Conexion a Css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <!-- Barra MenuBar -------------------------------->
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="110"
+            width="110"
+            src="img/LogoSuper.png"
+            alt="programador"
+            style="float: left"
+          />
+          <div class="logotype"></div>
+        </a>
+        <!-- div Buscar-------------------------------->
+      <div class="buscar_n">
+        <form class="buscar">
+          <input class="btntexto" type="text" placeholder="Buscar..." />
+          <button class="btnbusca" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+        <!-- Botones Menu abrir modo Movil -------------------------------->
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+          <!-- Botones Menu  -------------------------------->
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="index.html" class="selected">Inicio</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="administracion.html">Administracion</a></li>
+          <li><a href="adminProductos.html">Formulario</a></li>
+          <li><a href="contacto.html">Contactenos</a></li>
+        </ul>
+      </nav>
+      <!-- Barra MenuBar Fin -------------------------------->
+    </header>
+    <!-- Contenedor_1 Buscar /descripcion -------------------------------->
+    <section class="contenedor">
+      <!-- div descripcion-->
+      <div class="descripcion">
+        <article>
+          <h1 class="titulo1">Super MarKet</h1>
+          <p class="parrafo1">
+            <span></span>
+            El inicio de esta gran familia de supermercados, se remonta al año 2010, fecha desde la cual nuestra organización continúa a
+            diario brindando el servicio de venta al por mayor de productos de consumo masivo de la más alta calidad, priorizando su experiencia en grandes planes de renovación y crecimiento constantes.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Contenedor  Slider-------------------------------->
+    <div class="container-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="img/Slider 01.png" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/Slider 02.png" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/Slider 03.png" alt="" class="slider__img" />
+        </div>
+        <div class="slider__section">
+          <img src="img/Slider 04.png" alt="" class="slider__img" />
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--rigth" id="btn-rigth">&#62</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+    </div>
+    <script src="slider.js"></script>
+    <!-- Grid de productos-------------------------------->
+    <main class="main">
+      <div class="container">
+        <h2 class="main-title">Productos Destacados</h2>
+        <section class="container-productos">
+          <!-- 1 bloque de articulos ---------------------------------->
+          <div class="product">
+            <img src="img/articulos/01 cepillo de mano.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Cepillo de mano</h3>
+              <span class="product__price">$3.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/02 escoba.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Escoba blanda</h3>
+              <span class="product__price">$5.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/03 recogedor.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Recogedor plastico</h3>
+              <span class="product__price">$4.000</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/04 toalla de mano.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Toalla de cocina</h3>
+              <span class="product__price">$6.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <!-- 2 bloque de articulos -------------------------------->
+          <div class="product">
+            <img src="img/articulos/05 aceite.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Aceite de oliva</h3>
+              <span class="product__price">$16.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/06 mantequilla.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Margarina</h3>
+              <span class="product__price">$2.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/07 huevos.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Huevos AA</h3>
+              <span class="product__price">$8.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/08 harina de trigo.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Harina de trigo</h3>
+              <span class="product__price">$8.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <!-- 3 bloque de articulos -------------------------------->
+          <div class="product">
+            <img src="img/articulos/09 cafe tostado.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Cafe Tostado</h3>
+              <span class="product__price">$18.000</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/10 chocolate.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Chocolates</h3>
+              <span class="product__price">$22.000</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/11 leche.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Leche Entera</h3>
+              <span class="product__price">$3.900</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="product">
+            <img src="img/articulos/12 galletas.png" alt="" class="product__img">
+            <div class="product__description">
+              <h3 class="product__title">Galletas</h3>
+              <span class="product__price">$4.500</span>
+            </div>
+            <i class="product_icon fa-solid fa-cart-plus"></i>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Pie de Pagina -------------------------------->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+                <img src="img/Minilogo.png" alt="Logo Market">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+            <h2>Terminos y condiciones</h2>
+            <p>Esta página web es propiedad y está administrada por supermercados Super Market</p>
+            <p>Al acceder o usar nuetsra página web, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos.</p>
+        </div>
+        <div class="box">
+            <h2>Siguenos:</h2>
+            <div class="red-social">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Bucaramanga - (Santander)</h3>
+            <p>Calle 29 # 25-24 - Barrio Antonia Santos</p>
+            <p>Contáctanos (+57) 6712222 – Ext 1901</p>
+            <p>Correo; SuperMarket@gmail.com</p>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; <b> Super Market</b><b> - 2023 <b> - <b> Todos los derechos reservados</b>- Prohibida la reproducción total o parcial.</b></small>
+      </div>
+
+    </footer>  
+      
+  </body>
+</html>

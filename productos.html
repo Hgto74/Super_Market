@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AModal</title>
+
+    <meta name="description" content="Administracion" />
+    <!-- link Iconos -->
+    <script
+      src="https://kit.fontawesome.com/a7f78d4b75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link Fuentes Google ------------------------------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/Minilogo.png" />
+    <!-- Conexion a Css -->
+    <link rel="stylesheet" href="css/ofertas.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    
+  </head>
+  <body>
+    <!-- Barra MenuBar -------------------------------->
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="110"
+            width="110"
+            src="img/LogoSuper.png"
+            alt="programador"
+            style="float: left"
+          />
+          <div class="logotype"></div>
+        </a>
+        <!-- div Buscar-------------------------------->
+      <div class="buscar_n">
+        <form class="buscar">
+          <input class="btntexto" type="text" placeholder="Buscar..." />
+          <button class="btnbusca" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+        <!-- Botones Menu abrir modo Movil -------------------------------->
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+          <!-- Botones Menu cerrar modo Movil -------------------------------->
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="productos.html" class="selected">Productos</a></li>
+          <li><a href="administracion.html">Administracion</a></li>
+          <li><a href="adminProductos.html">Formulario</a></li>
+          <li><a href="contacto.html">Contactenos</a></li>
+        </ul>
+      </nav>
+      <!-- Barra MenuBar Fin -------------------------------->
+    </header>
+
+    <!-- Seccion de productos -------------------------------->
+    <h1 class="main-title">Nuestros Productos del campo a su mesa:</h1>
+    <main class="main">
+      <!-- Contenedor por producto----------------------->
+      <section class="container-productos_M">
+        <div class="container">
+        <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->          
+          <h3 class="product__title_1">Fresas</h3>
+            <img src="img/Productos/01 Fresas.png" alt="" class="product__img">          
+            <button onclick="window.modal1.showModal();">Ver Informacion</button>
+            <dialog id="modal1">
+            <h3>Fresas</h3>
+            <img src="img/Productos/01 Fresas.png" alt="" class="product__img"> 
+            <p>Fresas silvestres Kg.</p>    
+            <h4>Disponibles: 52 Unid.</h4> 
+            <div class="precio_ante"><del>$6.000</del><span class="nuevo_precio">$5.600</span></div>
+            <!-- Objeto Js para cerrar ventana modal---->
+            <button onclick="window.modal1.close();">X</button>
+        </dialog>
+          
+        </div>      
+        <!-- Modal  2---->
+        <div class="container">
+          <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+          <h3 class="product__title_1">Uvas</h3>
+            <img src="img/Productos/02 Uvas.png" alt="" class="product__img">          
+            <button onclick="window.modal2.showModal();">Ver Informacion</button>
+            <dialog id="modal2">
+            <h3>Uvas</h3>
+            <img src="img/Productos/02 Uvas.png" alt="" class="product__img"> 
+            <p>Uvas Chilenas Kg.</p>    
+            <h4>Disponibles: 34 Unid.</h4> 
+            <div class="precio_ante"><del>$12.000</del><span class="nuevo_precio">$11.000</span></div>
+            <!-- Objeto Js para cerrar ventana modal---->
+            <button onclick="window.modal2.close();">X</button>
+          </dialog>
+        </div>
+        <!-- Modal  3----> 
+        <div class="container">
+          <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+          <h3 class="product__title_1">Manzanas</h3>
+            <img src="img/Productos/03 manzanas.png" alt="" class="product__img">          
+            <button onclick="window.modal3.showModal();">Ver Informacion</button>
+            <dialog id="modal3">
+            <h3>Manzanas</h3>
+            <img src="img/Productos/03 manzanas.png" alt="" class="product__img"> 
+            <p>Manzanas frescas Kg.</p>    
+            <h4>Disponibles: 84 Unid.</h4> 
+            <div class="precio_ante"><del>$1.800</del><span class="nuevo_precio">$1.500</span></div>
+            <!-- Objeto Js para cerrar ventana modal---->
+            <button onclick="window.modal3.close();">X</button>
+          </dialog>
+        </div>
+          <!-- Modal  4----> 
+          <div class="container">
+            <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+            <h3 class="product__title_1">Arandanos</h3>
+              <img src="img/Productos/04 arandanos.png" alt="" class="product__img">          
+              <button onclick="window.modal4.showModal();">Ver Informacion</button>
+              <dialog id="modal4">
+              <h3>Arandanos</h3>
+              <img src="img/Productos/04 arandanos.png" alt="" class="product__img"> 
+              <p>Arandanos Kg.</p>    
+              <h4>Disponibles: 34 Unid.</h4> 
+              <div class="precio_ante"><del>$12.000</del><span class="nuevo_precio">$11.000</span></div>
+              <!-- Objeto Js para cerrar ventana modal---->
+              <button onclick="window.modal4.close();">X</button>
+            </dialog>
+          </div>
+          <!-- Modal  5----> 
+          <div class="container">
+            <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+            <h3 class="product__title_1">Bananas</h3>
+              <img src="img/Productos/05 bananas.png" alt="" class="product__img">          
+              <button onclick="window.modal5.showModal();">Ver Informacion</button>
+              <dialog id="modal5">
+              <h3>Bananas</h3>
+              <img src="img/Productos/05 bananas.png" alt="" class="product__img"> 
+              <p>Banano Criollo Kg.</p>    
+              <h4>Disponibles: 104 Unid.</h4> 
+              <div class="precio_ante"><del>$2.000</del><span class="nuevo_precio">$1.800</span></div>
+              <!-- Objeto Js para cerrar ventana modal---->
+              <button onclick="window.modal5.close();">X</button>
+            </dialog>
+          </div>
+          <!-- Modal  6----> 
+          <div class="container">
+            <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+            <h3 class="product__title_1">Naranjas</h3>
+              <img src="img/Productos/06 naranjas.png" alt="" class="product__img">          
+              <button onclick="window.modal6.showModal();">Ver Informacion</button>
+              <dialog id="modal6">
+              <h3>Naranjas</h3>
+              <img src="img/Productos/06 naranjas.png" alt="" class="product__img"> 
+              <p>Naranjas Kg.</p>    
+              <h4>Disponibles: 200 Unid.</h4> 
+              <div class="precio_ante"><del>$6.500</del><span class="nuevo_precio">$4.800</span></div>
+              <!-- Objeto Js para cerrar ventana modal---->
+              <button onclick="window.modal6.close();">X</button>
+            </dialog>
+          </div>
+          <!-- Modal  7----> 
+          <div class="container">
+            <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+            <h3 class="product__title_1">Toronjas</h3>
+              <img src="img/Productos/07 toronja.png" alt="" class="product__img">          
+              <button onclick="window.modal7.showModal();">Ver Informacion</button>
+              <dialog id="modal7">
+              <h3>Toronjas</h3>
+              <img src="img/Productos/07 toronja.png" alt="" class="product__img"> 
+              <p>Toronjas dulces Kg.</p>    
+              <h4>Disponibles: 114 Unid.</h4> 
+              <div class="precio_ante"><del>$6.500</del><span class="nuevo_precio">$5.800</span></div>
+              <!-- Objeto Js para cerrar ventana modal---->
+              <button onclick="window.modal7.close();">X</button>
+            </dialog>
+          </div>
+          <!-- Modal  8----> 
+          <div class="container">
+            <!-- Producto con etiqueta <dialog> ventana modal con detalles del  producto---->  
+            <h3 class="product__title_1">Moras</h3>
+              <img src="img/Productos/08 moras.png" alt="" class="product__img">          
+              <button onclick="window.modal8.showModal();">Ver Informacion</button>
+              <dialog id="modal8">
+              <h3>Moras</h3>
+              <img src="img/Productos/08 moras.png" alt="" class="product__img"> 
+              <p>Moras silvestres Kg.</p>    
+              <h4>Disponibles: 124 Unid.</h4> 
+              <div class="precio_ante"><del>$2.800</del><span class="nuevo_precio">$2.300</span></div>
+              <!-- Objeto Js para cerrar ventana modal---->
+              <button onclick="window.modal8.close();">X</button>
+            </dialog>
+          </div>        
+      </section>
+    </main>
+
+
+    <!-- Pie de Pagina -------------------------------->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+                <img src="img/Minilogo.png" alt="Logo Market">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+            <h2>Terminos y condiciones</h2>
+            <p>Esta página web es propiedad y está administrada por supermercados Super Market</p>
+            <p>Al acceder o usar nuetsra página web, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos.</p>
+        </div>
+        <div class="box">
+            <h2>Siguenos:</h2>
+            <div class="red-social">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Bucaramanga - (Santander)</h3>
+            <p>Calle 29 # 25-24 - Barrio Antonia Santos</p>
+            <p>Contáctanos (+57) 6712222 – Ext 1901</p>
+            <p>Correo; SuperMarket@gmail.com</p>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; <b> Super Market</b><b> - 2023 <b> - <b> Todos los derechos reservados</b>- Prohibida la reproducción total o parcial.</b></small>
+      </div>
+      
+    </footer>  
+      
+  </body>
+</html>

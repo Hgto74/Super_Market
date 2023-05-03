@@ -1,0 +1,186 @@
+/* Variables de color para aplicar Invocando la variable */
+:root {
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secondary-color: #f7c331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3a4460;
+  --footer-color: #102a46;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* estilo estandar para el Body----------------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Contactenos estilos----------------------- */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* formulario estilos-- */
+form {
+  padding: 50px 55 px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  width: 450px;
+}
+/* Estilos grupo de input-- */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h2 {
+  color: #102a46;
+  font-size: 35px;
+}
+/* Estilos grupo de label-- */
+label {
+  color: #102a46;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* Estilos grupo de campo textarea- */
+input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: rgb(245, 243, 243);
+  border: 2px solid #f0faf1;
+  outline: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+/* Estilos accesos politica y terminos- */
+.form-txt a {
+  color: #102a46;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* Estilos boton de envio */
+.btn {
+  font-size: 16px;
+  color: #ffff;
+  border: 0;
+  border-radius: 25px;
+  background: linear-gradient(to right, #102a46, #4794e6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+/* Modo responsive formulario de contactenos----------------------- */
+@media (max-width: 980px) {
+  form {
+    padding: 30px;
+  }
+  input {
+    padding: 15px;
+  }
+}
+
+/* Footer estilos----------------------- */
+.footer {
+  width: 100%;
+  background: #102a46;
+  color: white;
+  padding: 10px;
+}
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .grupo-1 .box figure img {
+  width: 200px;
+}
+.footer .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.footer .grupo-1 .red-social a {
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #102a46;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.footer .grupo-2 {
+  background-color: #102a46;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .grupo-2 small {
+  font-size: 15px;
+}
+
+/* Modo responsive para Footer----------------------- */
+
+@media (max-width: 980px) {
+  /* reducir el contenedor a 2 columnas */
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 45px 0px;
+  }
+}

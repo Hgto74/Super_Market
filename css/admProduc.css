@@ -1,0 +1,233 @@
+/* Variables de color para aplicar Invocando la variable */
+:root {
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secondary-color: #f7c331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3a4460;
+  --footer-color: #102a46;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* estilo estandar para el Body----------------------- */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* formulario de productos estilos----------------------- */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* formulario de productos estilos----------------------- */
+.main-title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title h1 {
+  font-weight: 300;
+}
+
+.contenedor {
+  width: 100%;
+  height: calc(100vh - 100px);
+  width: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ESTILOS FORMULARIO */
+.contenedor .div-formulario {
+  width: 50%;
+  height: 400px;
+  margin: 15px 15px;
+  background-color: #102a46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor .div-formulario h2 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+.contenedor .div-formulario form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contenedor .div-formulario form input,
+.contenedor .div-formulario form button {
+  width: 70%;
+  padding: 20px 20px;
+  margin: 5px 5px;
+  font-size: 15px;
+}
+
+.contenedor .div-formulario form button {
+  font-weight: bold;
+  background: linear-gradient(to right, #767779, #dde1e6);
+}
+
+/* ESTILOS LISTADO */
+.contenedor .div-listado {
+  width: 70%;
+  height: calc(100% - 70px);
+  margin: 15px 15px;
+  background-color: #102a46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contenedor .div-listado h2 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.contenedor .div-listado .div-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  padding: 0 30px;
+}
+
+.contenedor .div-listado .div-productos p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #ddd;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  margin: 0 5px;
+  color: white;
+  border-radius: 50px;
+  
+}
+
+.btn-editar {
+  background-color: green;
+}
+
+.btn-eliminar {
+  background-color: red;
+}
+/* Footer estilos----------------------- */
+.footer {
+  width: 100%;
+  background: #102a46;
+  color: white;
+  padding: 10px;
+}
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .grupo-1 .box figure img {
+  width: 200px;
+}
+.footer .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.footer .grupo-1 .red-social a {
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #102a46;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.footer .grupo-2 {
+  background-color: #102a46;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .grupo-2 small {
+  font-size: 15px;
+}
+
+/* Modo responsive para Footer----------------------- */
+
+@media (max-width: 980px) {
+  /* reducir el contenedor a 2 columnas */
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 45px 0px;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administracion</title>
+
+    <meta name="description" content="Administracion" />
+    <!-- link Iconos -->
+    <script
+      src="https://kit.fontawesome.com/a7f78d4b75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link Fuentes Google ------------------------------>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/Minilogo.png" />
+    <!-- Conexion a Css -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+  <body>
+    <!-- Barra MenuBar -------------------------------->
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="110"
+            width="110"
+            src="img/LogoSuper.png"
+            alt="programador"
+            style="float: left"
+          />
+          <div class="logotype"></div>
+        </a>
+        <!-- div Buscar-------------------------------->
+      <div class="buscar_n">
+        <form class="buscar">
+          <input class="btntexto" type="text" placeholder="Buscar..." />
+          <button class="btnbusca" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+        <!-- Botones Menu abrir modo Movil -------------------------------->
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+          <!-- Botones Menu cerrar modo Movil -------------------------------->
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="administracion.html" class="selected">Administracion</a></li>
+          <li><a href="adminProductos.html">Formulario</a></li>
+          <li><a href="contacto.html">Contactenos</a></li>
+        </ul>
+      </nav>
+      <!-- Barra MenuBar Fin -------------------------------->
+    </header>
+    <!-- Estructura login de usuario -------------------------------->
+    <main class="main">
+      <form action="">
+        <h1 class="tittle">Bienvenido</h1>
+        <h3 class="tittle2">Ingresa tus datos para iniciar</h3>
+        <label>
+          <i class="fa-solid fa-user"></i>
+          <input placeholder="Correo" type="text" id="username">
+        </label>
+        <label>
+          <i class="fa-solid fa-lock"></i>
+          <input placeholder="Contraseña" type="password" id="password">
+        </label>
+        <a href="#" class="link">Olvido su Contraseña</a>
+<!-- Botones de ingreso y crear cuenta nueva-------------------------------->
+        <button class="button1" id="buttton1">Iniciar Sesion</button>       
+
+        <button class="button2" id="buttton2">Crear Cuenta</button>
+
+      </form>
+    </main>
+    <script src="js/logusuario.js"></script>
+    <script src="js/logicaInterfazinicioSesion.js"></script>
+<!-- Estructura login de usuario -------------------------------->
+
+    <!-- Pie de Pagina -------------------------------->
+    <footer class="footer">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+                <img src="img/Minilogo.png" alt="Logo Market">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+            <h2>Terminos y condiciones</h2>
+            <p>Esta página web es propiedad y está administrada por supermercados Super Market</p>
+            <p>Al acceder o usar nuetsra página web, usted aprueba que haya leído, entendido y aceptado estar sujeto a estos Términos.</p>
+        </div>
+        <div class="box">
+            <h2>Siguenos:</h2>
+            <div class="red-social">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Bucaramanga - (Santander)</h3>
+            <p>Calle 29 # 25-24 - Barrio Antonia Santos</p>
+            <p>Contáctanos (+57) 6712222 – Ext 1901</p>
+            <p>Correo; SuperMarket@gmail.com</p>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; <b> Super Market</b><b> - 2023 <b> - <b> Todos los derechos reservados</b>- Prohibida la reproducción total o parcial.</b></small>
+      </div>
+      
+    </footer>  
+      
+  </body>
+</html>
